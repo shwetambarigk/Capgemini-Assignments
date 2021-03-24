@@ -1,0 +1,154 @@
+MongoDB Enterprise atlas-12aq62-shard-0:PRIMARY> db.zipcodes.aggregate([{"$group" : {_id: {"city":"ATLANTA"},count:{$sum:1}}}]);
+uncaught exception: Error: error doing query: failed: network error while attempting to run command 'aggregate' on host 'cluster1-shard-00-02.i1unk.mongodb.net:27017'  :
+DB.prototype.runCommand@src/mongo/shell/db.js:169:19
+DB.prototype.runReadCommand@src/mongo/shell/db.js:141:12
+DB.prototype._runAggregate/doAgg<@src/mongo/shell/db.js:245:60
+DB.prototype._runAggregate@src/mongo/shell/db.js:248:17
+DBCollection.prototype.aggregate@src/mongo/shell/collection.js:1058:12
+@(shell):1:1
+MongoDB Enterprise atlas-12aq62-shard-0:PRIMARY> use population
+switched to db population
+MongoDB Enterprise atlas-12aq62-shard-0:PRIMARY> show collections
+zipcodes
+MongoDB Enterprise atlas-12aq62-shard-0:PRIMARY> db.zipcodes.aggregate([{"$group" : {_id: {"city":"ATLANTA"},count:{$sum:1}}}]);
+{ "_id" : { "city" : "ATLANTA" }, "count" : 29353 }
+MongoDB Enterprise atlas-12aq62-shard-0:PRIMARY>  db.zipcodes.aggregate([{$group:{_id:"$city",count:{$sum:1}}}]);
+{ "_id" : "LOOKEBA", "count" : 1 }
+{ "_id" : "RUTH", "count" : 3 }
+{ "_id" : "EAST WATERTOWN", "count" : 1 }
+{ "_id" : "GRAND BEACH", "count" : 1 }
+{ "_id" : "SCOTRUN", "count" : 1 }
+{ "_id" : "WEST HENRIETTA", "count" : 1 }
+{ "_id" : "DEER TRAIL", "count" : 1 }
+{ "_id" : "KEZAR FALLS", "count" : 1 }
+{ "_id" : "PERRIS", "count" : 1 }
+{ "_id" : "YUMA", "count" : 3 }
+{ "_id" : "HERMLEIGH", "count" : 1 }
+{ "_id" : "ONONDAGA", "count" : 2 }
+{ "_id" : "HITCHCOCK", "count" : 3 }
+{ "_id" : "ATTALLA", "count" : 1 }
+{ "_id" : "ANDICE", "count" : 1 }
+{ "_id" : "UNION GAP", "count" : 1 }
+{ "_id" : "LACON", "count" : 1 }
+{ "_id" : "SMOKETOWN", "count" : 1 }
+{ "_id" : "LICKING", "count" : 1 }
+{ "_id" : "VERGENNES", "count" : 2 }
+Type "it" for more
+MongoDB Enterprise atlas-12aq62-shard-0:PRIMARY> db.zipcodes.aggregate([{$group:{_id:"$state",count:{$sum:1}}}]);
+{ "_id" : "MI", "count" : 876 }
+{ "_id" : "ID", "count" : 244 }
+{ "_id" : "TN", "count" : 582 }
+{ "_id" : "IN", "count" : 676 }
+{ "_id" : "CA", "count" : 1516 }
+{ "_id" : "MO", "count" : 994 }
+{ "_id" : "AZ", "count" : 270 }
+{ "_id" : "NV", "count" : 104 }
+{ "_id" : "DC", "count" : 24 }
+{ "_id" : "KY", "count" : 809 }
+{ "_id" : "AL", "count" : 567 }
+{ "_id" : "HI", "count" : 80 }
+{ "_id" : "GA", "count" : 635 }
+{ "_id" : "CO", "count" : 414 }
+{ "_id" : "WA", "count" : 484 }
+{ "_id" : "NY", "count" : 1595 }
+{ "_id" : "WI", "count" : 716 }
+{ "_id" : "MT", "count" : 314 }
+{ "_id" : "CT", "count" : 263 }
+{ "_id" : "MD", "count" : 420 }
+Type "it" for more
+MongoDB Enterprise atlas-12aq62-shard-0:PRIMARY> db.zipcodes.aggregate([{$sort:{pop:-1}}]);
+{ "_id" : "60623", "city" : "CHICAGO", "loc" : [ -87.7157, 41.849015 ], "pop" : 112047, "state" : "IL" }
+{ "_id" : "11226", "city" : "BROOKLYN", "loc" : [ -73.956985, 40.646694 ], "pop" : 111396, "state" : "NY" }
+{ "_id" : "10021", "city" : "NEW YORK", "loc" : [ -73.958805, 40.768476 ], "pop" : 106564, "state" : "NY" }
+{ "_id" : "10025", "city" : "NEW YORK", "loc" : [ -73.968312, 40.797466 ], "pop" : 100027, "state" : "NY" }
+{ "_id" : "90201", "city" : "BELL GARDENS", "loc" : [ -118.17205, 33.969177 ], "pop" : 99568, "state" : "CA" }
+{ "_id" : "60617", "city" : "CHICAGO", "loc" : [ -87.556012, 41.725743 ], "pop" : 98612, "state" : "IL" }
+{ "_id" : "90011", "city" : "LOS ANGELES", "loc" : [ -118.258189, 34.007856 ], "pop" : 96074, "state" : "CA" }
+{ "_id" : "60647", "city" : "CHICAGO", "loc" : [ -87.704322, 41.920903 ], "pop" : 95971, "state" : "IL" }
+{ "_id" : "60628", "city" : "CHICAGO", "loc" : [ -87.624277, 41.693443 ], "pop" : 94317, "state" : "IL" }
+{ "_id" : "90650", "city" : "NORWALK", "loc" : [ -118.081767, 33.90564 ], "pop" : 94188, "state" : "CA" }
+{ "_id" : "60620", "city" : "CHICAGO", "loc" : [ -87.654251, 41.741119 ], "pop" : 92005, "state" : "IL" }
+{ "_id" : "60629", "city" : "CHICAGO", "loc" : [ -87.706936, 41.778149 ], "pop" : 91814, "state" : "IL" }
+{ "_id" : "60609", "city" : "CHICAGO", "loc" : [ -87.653279, 41.809721 ], "pop" : 89762, "state" : "IL" }
+{ "_id" : "60618", "city" : "CHICAGO", "loc" : [ -87.704214, 41.946401 ], "pop" : 88377, "state" : "IL" }
+{ "_id" : "11373", "city" : "JACKSON HEIGHTS", "loc" : [ -73.878551, 40.740388 ], "pop" : 88241, "state" : "NY" }
+{ "_id" : "91331", "city" : "ARLETA", "loc" : [ -118.420692, 34.258081 ], "pop" : 88114, "state" : "CA" }
+{ "_id" : "11212", "city" : "BROOKLYN", "loc" : [ -73.914483, 40.662474 ], "pop" : 87079, "state" : "NY" }
+{ "_id" : "90280", "city" : "SOUTH GATE", "loc" : [ -118.201349, 33.94617 ], "pop" : 87026, "state" : "CA" }
+{ "_id" : "11385", "city" : "RIDGEWOOD", "loc" : [ -73.896122, 40.703613 ], "pop" : 85732, "state" : "NY" }
+{ "_id" : "10467", "city" : "BRONX", "loc" : [ -73.871242, 40.873671 ], "pop" : 85710, "state" : "NY" }
+Type "it" for more
+MongoDB Enterprise atlas-12aq62-shard-0:PRIMARY> db.zipcodes.aggregate([{$limit:3},{$sort:{pop:-1}]);
+...
+...
+MongoDB Enterprise atlas-12aq62-shard-0:PRIMARY>
+MongoDB Enterprise atlas-12aq62-shard-0:PRIMARY> db.zipcodes.aggregate([{$limit:3},{$sort:{pop:-1}}]);
+{ "_id" : "01002", "city" : "CUSHMAN", "loc" : [ -72.51565, 42.377017 ], "pop" : 36963, "state" : "MA" }
+{ "_id" : "01001", "city" : "AGAWAM", "loc" : [ -72.622739, 42.070206 ], "pop" : 15338, "state" : "MA" }
+{ "_id" : "01005", "city" : "BARRE", "loc" : [ -72.108354, 42.409698 ], "pop" : 4546, "state" : "MA" }
+MongoDB Enterprise atlas-12aq62-shard-0:PRIMARY> db.zipcodes.aggregate([{$group:{_id:{$or:[{city:"$city"},{state:"$state"}]},total:{$sum:"$pop"}}}])db.zipcodes.aggregate([{$group:{_id:{$or:[{city:"$city"},{state:"$state"}]},total:{$sum:"$pop"}}}]);
+uncaught exception: SyntaxError: unexpected token: identifier :
+@(shell):1:99
+MongoDB Enterprise atlas-12aq62-shard-0:PRIMARY> db.zipcodes.aggregate([{$group:{_id:{$or:[{city:"$city"},{state:"$state"}]},total:{$sum:"$pop"}}}]);
+{ "_id" : true, "total" : 248408400 }
+MongoDB Enterprise atlas-12aq62-shard-0:PRIMARY> db.zipcodes.aggregate([{$sort:{pop:-1}}]);
+{ "_id" : "60623", "city" : "CHICAGO", "loc" : [ -87.7157, 41.849015 ], "pop" : 112047, "state" : "IL" }
+{ "_id" : "11226", "city" : "BROOKLYN", "loc" : [ -73.956985, 40.646694 ], "pop" : 111396, "state" : "NY" }
+{ "_id" : "10021", "city" : "NEW YORK", "loc" : [ -73.958805, 40.768476 ], "pop" : 106564, "state" : "NY" }
+{ "_id" : "10025", "city" : "NEW YORK", "loc" : [ -73.968312, 40.797466 ], "pop" : 100027, "state" : "NY" }
+{ "_id" : "90201", "city" : "BELL GARDENS", "loc" : [ -118.17205, 33.969177 ], "pop" : 99568, "state" : "CA" }
+{ "_id" : "60617", "city" : "CHICAGO", "loc" : [ -87.556012, 41.725743 ], "pop" : 98612, "state" : "IL" }
+{ "_id" : "90011", "city" : "LOS ANGELES", "loc" : [ -118.258189, 34.007856 ], "pop" : 96074, "state" : "CA" }
+{ "_id" : "60647", "city" : "CHICAGO", "loc" : [ -87.704322, 41.920903 ], "pop" : 95971, "state" : "IL" }
+{ "_id" : "60628", "city" : "CHICAGO", "loc" : [ -87.624277, 41.693443 ], "pop" : 94317, "state" : "IL" }
+{ "_id" : "90650", "city" : "NORWALK", "loc" : [ -118.081767, 33.90564 ], "pop" : 94188, "state" : "CA" }
+{ "_id" : "60620", "city" : "CHICAGO", "loc" : [ -87.654251, 41.741119 ], "pop" : 92005, "state" : "IL" }
+{ "_id" : "60629", "city" : "CHICAGO", "loc" : [ -87.706936, 41.778149 ], "pop" : 91814, "state" : "IL" }
+{ "_id" : "60609", "city" : "CHICAGO", "loc" : [ -87.653279, 41.809721 ], "pop" : 89762, "state" : "IL" }
+{ "_id" : "60618", "city" : "CHICAGO", "loc" : [ -87.704214, 41.946401 ], "pop" : 88377, "state" : "IL" }
+{ "_id" : "11373", "city" : "JACKSON HEIGHTS", "loc" : [ -73.878551, 40.740388 ], "pop" : 88241, "state" : "NY" }
+{ "_id" : "91331", "city" : "ARLETA", "loc" : [ -118.420692, 34.258081 ], "pop" : 88114, "state" : "CA" }
+{ "_id" : "11212", "city" : "BROOKLYN", "loc" : [ -73.914483, 40.662474 ], "pop" : 87079, "state" : "NY" }
+{ "_id" : "90280", "city" : "SOUTH GATE", "loc" : [ -118.201349, 33.94617 ], "pop" : 87026, "state" : "CA" }
+{ "_id" : "11385", "city" : "RIDGEWOOD", "loc" : [ -73.896122, 40.703613 ], "pop" : 85732, "state" : "NY" }
+{ "_id" : "10467", "city" : "BRONX", "loc" : [ -73.871242, 40.873671 ], "pop" : 85710, "state" : "NY" }
+Type "it" for more
+MongoDB Enterprise atlas-12aq62-shard-0:PRIMARY> db.zipcodes.aggregate([{$limit:3},{$sort:{pop:-1}}]);
+{ "_id" : "01002", "city" : "CUSHMAN", "loc" : [ -72.51565, 42.377017 ], "pop" : 36963, "state" : "MA" }
+{ "_id" : "01001", "city" : "AGAWAM", "loc" : [ -72.622739, 42.070206 ], "pop" : 15338, "state" : "MA" }
+{ "_id" : "01005", "city" : "BARRE", "loc" : [ -72.108354, 42.409698 ], "pop" : 4546, "state" : "MA" }
+MongoDB Enterprise atlas-12aq62-shard-0:PRIMARY> db.zipcodes.aggregate([{"$group" : {_id: {"city":"TEXAS"},count:{$sum:1}}}]);
+{ "_id" : { "city" : "TEXAS" }, "count" : 29353 }
+MongoDB Enterprise atlas-12aq62-shard-0:PRIMARY> db.zipcodes.aggregate([{$group:{_id:"$city",avgPop:{$avg:"$pop"}}}]);
+{ "_id" : "OBSERVATORY", "avgPop" : 19981 }
+{ "_id" : "ODIN", "avgPop" : 807 }
+{ "_id" : "FOXTON", "avgPop" : 127 }
+{ "_id" : "KELSO", "avgPop" : 5945 }
+{ "_id" : "COLVER", "avgPop" : 1531 }
+{ "_id" : "PLESSIS", "avgPop" : 111 }
+{ "_id" : "IVORYTON", "avgPop" : 2748 }
+{ "_id" : "BOLTON", "avgPop" : 3564.5 }
+{ "_id" : "DUBACH", "avgPop" : 2838 }
+{ "_id" : "WOLVERTON", "avgPop" : 834 }
+{ "_id" : "AMITE", "avgPop" : 12006 }
+{ "_id" : "ROUND ROCK", "avgPop" : 18669 }
+{ "_id" : "CHESTER", "avgPop" : 7285.0952380952385 }
+{ "_id" : "NORTH WILKESBORO", "avgPop" : 20167 }
+{ "_id" : "KIVALINA", "avgPop" : 689 }
+{ "_id" : "NORTH LIBERTY", "avgPop" : 3648.5 }
+{ "_id" : "STAMPING GROUND", "avgPop" : 3757 }
+{ "_id" : "LODI", "avgPop" : 13934.57142857143 }
+{ "_id" : "SHOEMAKERSVILLE", "avgPop" : 3947 }
+{ "_id" : "PICO RIVERA", "avgPop" : 58891 }
+Type "it" for more
+MongoDB Enterprise atlas-12aq62-shard-0:PRIMARY> db.zipcodes.aggregate([{$limit:3},{$group:{_id:"$city",avgPop:{$avg:"$pop"}}}]):
+...
+...
+MongoDB Enterprise atlas-12aq62-shard-0:PRIMARY> db.zipcodes.aggregate([{{$limit:3},{$group:{_id:"$city",avgPop:{$avg:"$pop"}}}}]);
+uncaught exception: SyntaxError: expected property name, got '{' :
+@(shell):1:24
+MongoDB Enterprise atlas-12aq62-shard-0:PRIMARY> db.zipcodes.aggregate([{$limit:3},{$group:{_id:"$city",avgPop:{$avg:"$pop"}}}]);
+{ "_id" : "CUSHMAN", "avgPop" : 36963 }
+{ "_id" : "BARRE", "avgPop" : 4546 }
+{ "_id" : "AGAWAM", "avgPop" : 15338 }
+MongoDB Enterprise atlas-12aq62-shard-0:PRIMARY>
