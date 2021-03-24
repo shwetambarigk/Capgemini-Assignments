@@ -1,0 +1,283 @@
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (master|MERGING)
+$ git checkout -b js-assignments
+Switched to a new branch 'js-assignments'
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (js-assignments)
+$ git branch -a
+  css-assignment1
+  html-assignment
+  htmlassignment
+* js-assignments
+  master
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (js-assignments)
+$ git checkout js-assignments
+error: you need to resolve your current index first
+cssfile.css: needs merge
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (js-assignments)
+$ git checkout master
+error: you need to resolve your current index first
+cssfile.css: needs merge
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (js-assignments)
+$ git show js-assignments
+commit edb6a901669babca7922b0d99e900f1e1177809a (HEAD -> js-assignments, master)
+Author: unknown <shwetambarikulkarni1198@gmail.com>
+Date:   Sat Mar 13 14:56:11 2021 +0530
+
+    README.txt added
+
+diff --git a/README.txt b/README.txt
+index c40f5c8..5cbd906 100644
+--- a/README.txt
++++ b/README.txt
+@@ -1 +1,2 @@
+-This is assignment! and now im making some changes!!
+\ No newline at end of file
++This is cssassignment!
++and now im making some changes!!
+\ No newline at end of file
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (js-assignments)
+$ git show js-assignments: /c/users/shweta/Assignments
+tree js-assignments:
+
+README.txt
+cssfile.css
+html-assignments.txt
+htmlassignment.html
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (js-assignments)
+$ git checkout js-assignments
+error: you need to resolve your current index first
+cssfile.css: needs merge
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (js-assignments)
+$ git branch -a
+  css-assignment1
+  html-assignment
+  htmlassignment
+* js-assignments
+  master
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (js-assignments)
+$ git add js-assignments.js
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (js-assignments)
+$ git commit -m "added js-assignments.js "
+error: Committing is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+U       cssfile.css
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (js-assignments)
+$ git branch -D css-assignments1
+error: branch 'css-assignments1' not found.
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (js-assignments)
+$ git branch -D css-assignment1
+Deleted branch css-assignment1 (was 5a5502e).
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (js-assignments)
+$ git commit -m "added js-assignments.js"
+error: Committing is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+U       cssfile.css
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (js-assignments)
+$ git add README.txt
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (js-assignments)
+$ git commit -m "added readme "
+error: Committing is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+U       cssfile.css
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (js-assignments)
+$ git add js-assignments.js
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (js-assignments)
+$ git stash
+cssfile.css: needs merge
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (js-assignments)
+$ git checkout js-assignments.js
+Updated 0 paths from the index
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (js-assignments)
+$ git commit -m " jsassignments added"
+error: Committing is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+U       cssfile.css
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (js-assignments)
+$ git add README.txt
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (js-assignments)
+$ git commit -m " readme added"
+error: Committing is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+U       cssfile.css
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (js-assignments)
+$ git add js-assignments.js
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (js-assignments)
+$ git init
+Reinitialized existing Git repository in C:/Users/Shweta/Assignments/.git/
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (js-assignments)
+$ git add js-assignments.js
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (js-assignments)
+$ git commit -m " js-assignments file added"
+error: Committing is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+U       cssfile.css
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (js-assignments)
+$ git add .
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (js-assignments)
+$ git commit -m " ."
+[js-assignments 3dd3be8]  .
+ 4 files changed, 17 insertions(+), 1 deletion(-)
+ create mode 100644 js-assignments.css
+ create mode 100644 js-assignments.js
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (js-assignments)
+$ git commit -m " js-assignments.js"
+On branch js-assignments
+nothing to commit, working tree clean
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (js-assignments)
+$ git add README.txt
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (js-assignments)
+$ git commit -m "changes are made in readme file"
+[js-assignments 9f18307] changes are made in readme file
+ 1 file changed, 1 insertion(+)
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (js-assignments)
+$ git branch -a
+  html-assignment
+  htmlassignment
+* js-assignments
+  master
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (js-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (master)
+$ git add README.txt
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (master)
+$ git commit -m "changes are made in README from master branch"
+[master 4c2aed3] changes are made in README from master branch
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (master)
+$ git branch -a
+  html-assignment
+  htmlassignment
+  js-assignments
+* master
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (master)
+$ git checkout js-assignments
+Switched to branch 'js-assignments'
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (js-assignments)
+$ git add js-assignments.js
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (js-assignments)
+$ git commit -m "changes are made in js file"
+On branch js-assignments
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   js-assignments.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (js-assignments)
+$ git add .
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (js-assignments)
+$ git commit -m "changes are made in js"
+[js-assignments 7f56b02] changes are made in js
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (js-assignments)
+$ git branch -a
+  html-assignment
+  htmlassignment
+* js-assignments
+  master
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (js-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (master)
+$ git merge js-assignments
+Auto-merging README.txt
+CONFLICT (content): Merge conflict in README.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (master|MERGING)
+$ git add -A
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (master|MERGING)
+$ git commit -m " added a file in "
+[master 4242a02]  added a file in
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (master)
+$ git log -3
+commit 4242a024bf8d377fe8a91db9e9cdbb368e767d15 (HEAD -> master)
+Merge: 4c2aed3 7f56b02
+Author: unknown <shwetambarikulkarni1198@gmail.com>
+Date:   Sat Mar 13 16:15:31 2021 +0530
+
+     added a file in
+
+commit 7f56b0213cd55092c7dc03cdb0d3b831e8efe34c (js-assignments)
+Author: unknown <shwetambarikulkarni1198@gmail.com>
+Date:   Sat Mar 13 16:05:09 2021 +0530
+
+    changes are made in js
+
+commit 4c2aed3e293e68d5ca8840f554e7eece5eb19e2a
+Author: unknown <shwetambarikulkarni1198@gmail.com>
+Date:   Sat Mar 13 15:56:53 2021 +0530
+
+    changes are made in README from master branch
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (master)
+$ git checkout master
+Already on 'master'
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (master)
+$ git merge js-assignments
+Already up to date.
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (master)
+$ git branch -d js-assignments
+Deleted branch js-assignments (was 7f56b02).
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (master)
+$

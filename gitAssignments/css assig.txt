@@ -1,0 +1,326 @@
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (master)
+$ git branch -a
+  html-assignment
+  htmlassignment
+* master
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (master)
+$ git branch css-assignments
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (master)
+$ git checkout css-assignments
+Switched to branch 'css-assignments'
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (css-assignments)
+$ git branch -a
+* css-assignments
+  html-assignment
+  htmlassignment
+  master
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (css-assignments)
+$ git add cssassignment
+fatal: pathspec 'cssassignment' did not match any files
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (css-assignments)
+$ git init
+Reinitialized existing Git repository in C:/Users/Shweta/Assignments/.git/
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (css-assignments)
+$ git add cssassignments
+fatal: pathspec 'cssassignments' did not match any files
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (css-assignments)
+$ git add cssassignments
+fatal: pathspec 'cssassignments' did not match any files
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (css-assignments)
+$ ^C
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (css-assignments)
+$ git init
+Reinitialized existing Git repository in C:/Users/Shweta/Assignments/.git/
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (css-assignments)
+$ git add cssassignment
+fatal: pathspec 'cssassignment' did not match any files
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (css-assignments)
+$ git branch -a
+* css-assignments
+  html-assignment
+  htmlassignment
+  master
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (css-assignments)
+$ git add css-assignments
+fatal: pathspec 'css-assignments' did not match any files
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (css-assignments)
+$ git init
+Reinitialized existing Git repository in C:/Users/Shweta/Assignments/.git/
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (css-assignments)
+$ git add css-assignments
+fatal: pathspec 'css-assignments' did not match any files
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (css-assignments)
+$ git add css-assignments
+fatal: pathspec 'css-assignments' did not match any files
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (css-assignments)
+$ git init
+Reinitialized existing Git repository in C:/Users/Shweta/Assignments/.git/
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (css-assignments)
+$ git add cssassignment
+fatal: pathspec 'cssassignment' did not match any files
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (css-assignments)
+$ git init
+Reinitialized existing Git repository in C:/Users/Shweta/Assignments/.git/
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (css-assignments)
+$ git add cssfile.css
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (css-assignments)
+$ git commit -m "CSS file is added!"
+[css-assignments f96665a] CSS file is added!
+ 1 file changed, 17 insertions(+)
+ create mode 100644 cssfile.css
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (css-assignments)
+$ git add README.txt
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (css-assignments)
+$ git commit -m "changes are made in README.txt"
+[css-assignments ae52fa3] changes are made in README.txt
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (css-assignments)
+$ git branch -a
+* css-assignments
+  html-assignment
+  htmlassignment
+  master
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (css-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (master)
+$ git add cssfile.css
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (master)
+$ git commit -m "changes made in cssfile.css"
+[master 5a5502e] changes made in cssfile.css
+ 1 file changed, 17 insertions(+)
+ create mode 100644 cssfile.css
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (master)
+$ git branch -a
+  css-assignments
+  html-assignment
+  htmlassignment
+* master
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (master)
+$ git merge css-assignments
+error: Your local changes to the following files would be overwritten by merge:
+        README.txt
+Please commit your changes or stash them before you merge.
+Aborting
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (master)
+$ git add -a
+error: unknown switch `a'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    --renormalize         renormalize EOL of tracked files (implies -u)
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+    --chmod (+|-)x        override the executable bit of the listed files
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (master)
+$ git commit -m "merging"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (master)
+$ git checkout master
+Already on 'master'
+M       README.txt
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (master)
+$ git merge html-assignments
+merge: html-assignments - not something we can merge
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (master)
+$ git merge css-assignments
+error: Your local changes to the following files would be overwritten by merge:
+        README.txt
+Please commit your changes or stash them before you merge.
+Aborting
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (master)
+$ git add css-assignments
+fatal: pathspec 'css-assignments' did not match any files
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (master)
+$ git checkout -b css-assignments
+fatal: A branch named 'css-assignments' already exists.
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (master)
+$ git checkout -b css-assignment1
+Switched to a new branch 'css-assignment1'
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (css-assignment1)
+$ git show css-assignments
+commit ae52fa34871dcb465246c7d1a11faa7664573244 (css-assignments)
+Author: unknown <shwetambarikulkarni1198@gmail.com>
+Date:   Sat Mar 13 13:44:01 2021 +0530
+
+    changes are made in README.txt
+
+diff --git a/README.txt b/README.txt
+index c40f5c8..aba2cfc 100644
+--- a/README.txt
++++ b/README.txt
+@@ -1 +1 @@
+-This is assignment! and now im making some changes!!
+\ No newline at end of file
++This is css assignment!
+\ No newline at end of file
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (css-assignment1)
+$ git checkout css-assignments
+error: Your local changes to the following files would be overwritten by checkout:
+        README.txt
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (css-assignment1)
+$ git add -a
+error: unknown switch `a'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    --renormalize         renormalize EOL of tracked files (implies -u)
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+    --chmod (+|-)x        override the executable bit of the listed files
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (css-assignment1)
+$ git commit -m "switched in master"
+On branch css-assignment1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (css-assignment1)
+$ git add README.txt
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (css-assignment1)
+$ git checkout master
+Switched to branch 'master'
+M       README.txt
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (master)
+$ git branch -a
+  css-assignment1
+  css-assignments
+  html-assignment
+  htmlassignment
+* master
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (master)
+$ git merge css-assignments
+error: Your local changes to the following files would be overwritten by merge:
+  README.txt
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (master)
+$ git stash
+Saved working directory and index state WIP on master: 5a5502e changes made in cssfile.css
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (master)
+$ git stash pop
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Dropped refs/stash@{0} (9b6667295786e4930577c92866e3eded965921de)
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (master)
+$ git merge css-assignments
+error: Your local changes to the following files would be overwritten by merge:
+        README.txt
+Please commit your changes or stash them before you merge.
+Aborting
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (master)
+$ git add README.txt
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (master)
+$ git commit -m "README.txt added"
+[master edb6a90] README.txt added
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (master)
+$ git merge css-assignments
+CONFLICT (add/add): Merge conflict in cssfile.css
+Auto-merging cssfile.css
+Auto-merging README.txt
+CONFLICT (content): Merge conflict in README.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (master|MERGING)
+$ git branch -d css-assignments
+error: The branch 'css-assignments' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D css-assignments'.
+
+Shweta@LAPTOP-V3PD2KR1 MINGW64 /c/users/shweta/Assignments (master|MERGING)
+$ git branch -D css-assignments
+Deleted branch css-assignments (was ae52fa3).
