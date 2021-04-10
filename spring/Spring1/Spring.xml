@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+        <bean class="org.shweta.javabrains.Address" name="address1">
+            <property name="street" value="Street 1, Murarji peth " />
+            <property name="city" value="Solapur" />
+            <property name="country" value="India" />
+            <property name="state" value="Maharashtra" />
+            <property name="zip" value="545678" />
+        </bean>
+
+        <bean class="org.shweta.javabrains.Customer" name="customer1">
+            <property name="customerName" value="Shweta" />
+            <property name="customerId"  value="111111" />
+            <property name="customerContact" value="789654334" />
+            <property name="customerAddress" ref="address1" />
+         </bean>
+
+        <bean class="org.shweta.javabrains.Address" name="address2">
+            <constructor-arg value="Railway Street, Shyam-lal Colony" />
+            <constructor-arg value="Pune" />
+            <constructor-arg value="Maha" />
+            <constructor-arg value="22222" />
+            <constructor-arg value="India" />
+        </bean>
+
+        <bean class="org.shweta.javabrains.Customer" name="customer2">
+            <constructor-arg value="14536" />
+            <constructor-arg value="Aarti" />
+            <constructor-arg value="88489292" />
+            <constructor-arg ref="address2" />
+        </bean>
+        <bean id="customer" class="org.shweta.javabrains.Customer"/>
+</beans>
